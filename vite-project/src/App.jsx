@@ -100,7 +100,7 @@ const [states, setStates] = useState("");
         </select>
       </div>
       <div>{
-        (selectedCountry && selectedState&& city)?("You selected" + selectedCountry +","+ selectedState + ","+ city):""
+        (selectedCountry && selectedState&& city)?("You selected" + city +","+ selectedState + ","+ selectedCountry):""
       }
       </div>
     </>
