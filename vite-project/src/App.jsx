@@ -27,6 +27,8 @@ const [states, setStates] = useState("");
 
   const handlechange = (event) => {
     setCountry(event.target.value);
+    setState("");
+    setCity("");
     fetchstate(event.target.value);
   };
 
@@ -98,7 +100,7 @@ const [states, setStates] = useState("");
         </select>
       </div>
       <div>{
-        (selectedCountry && selectedState&& city)?("You selected, " + selectedCountry +" "+ selectedState + " "+ city):""
+        (selectedCountry && selectedState&& city)?("You selected," + selectedCountry +" "+ selectedState + " "+ city):""
       }
       </div>
     </>
